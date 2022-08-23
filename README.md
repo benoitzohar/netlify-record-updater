@@ -16,7 +16,7 @@ npm install -g netlify-record-updater
 or
 
 ```bash
-yarn add -g netlify-record-updater
+yarn global add netlify-record-updater
 ```
 
 To update the record using the current public IP:
