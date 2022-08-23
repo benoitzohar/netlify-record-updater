@@ -1,0 +1,47 @@
+{
+  "name": "netlify-record-updater",
+  "version": "0.0.1",
+  "description": "A remote record updater for Netlify DNS",
+  "author": "Ben Zohar <benoit.zohar@gmail.com>",
+  "repository": "https://github.com/benoitzohar/netlify-record-updater",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.7.0"
+  },
+  "keywords": [
+    "netlify",
+    "record",
+    "dns",
+    "updater"
+  ],
+  "main": "./dist/tsc/main.js",
+  "types": "./dist/tsc/main.d.ts",
+  "bin": {
+    "netlify-record-updater": "./dist/esbuild/cli.js"
+  },
+  "scripts": {
+    "lint": "eslint src/ --ext .js,.jsx,.ts,.tsx",
+    "test": "jest",
+    "clean": "rm -rf dist",
+    "build": "esbuild src/cli.ts --bundle --platform=node --minify --sourcemap=external --outfile=dist/esbuild/cli.js",
+    "dev": "esbuild src/cli.ts --bundle --platform=node --watch --sourcemap=external --outfile=dist/esbuild/cli.js"
+  },
+  "devDependencies": {
+    "@types/jest": "^28.1.7",
+    "@types/node": "^18.7.11",
+    "@typescript-eslint/eslint-plugin": "^5.34.0",
+    "@typescript-eslint/parser": "^5.34.0",
+    "esbuild": "^0.15.5",
+    "eslint": "^8.22.0",
+    "jest": "28.1.3",
+    "ts-jest": "^28.0.8",
+    "ts-node": "^10.9.1",
+    "typedoc": "^0.23.10",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "commander": "^9.4.0",
+    "jest-fetch-mock": "^3.0.3",
+    "node-fetch": "^3.2.10"
+  }
+}
