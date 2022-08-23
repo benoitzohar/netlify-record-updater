@@ -110,7 +110,11 @@ export const deleteRecord = async (
   );
 };
 
-export const run = async (url: string, apiToken: string, ip?: string) => {
+export const updateRecord = async (
+  url: string,
+  apiToken: string,
+  ip?: string
+) => {
   const newIp = ip || (await getCurrentIp());
 
   const existingRecord = await getExistingRecord(url, apiToken);

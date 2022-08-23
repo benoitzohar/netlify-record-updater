@@ -2,7 +2,7 @@
 import { program } from "commander";
 
 import npmPackage from "../package.json";
-import { run } from "./main";
+import { updateRecord } from "./main";
 
 program
   .version(npmPackage.version)
@@ -13,6 +13,6 @@ program
     "New IP address of the domain (default: current public IP)"
   )
   .action(function (domain, apiToken, opts) {
-    run(domain, apiToken, opts.ip);
+    updateRecord(domain, apiToken, opts.ip);
   })
   .parse();

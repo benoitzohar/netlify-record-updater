@@ -6,13 +6,15 @@
   "repository": "https://github.com/benoitzohar/netlify-record-updater",
   "license": "MIT",
   "engines": {
-    "node": ">=18.7.0"
+    "node": ">=16"
   },
   "keywords": [
     "netlify",
     "record",
     "dns",
-    "updater"
+    "updater",
+    "rasp",
+    "raspberrypi"
   ],
   "main": "./dist/tsc/main.js",
   "types": "./dist/tsc/main.d.ts",
