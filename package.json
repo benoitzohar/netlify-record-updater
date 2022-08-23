@@ -1,6 +1,6 @@
 {
   "name": "netlify-record-updater",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A remote record updater for Netlify DNS",
   "author": "Ben Zohar <benoit.zohar@gmail.com>",
   "repository": "https://github.com/benoitzohar/netlify-record-updater",
